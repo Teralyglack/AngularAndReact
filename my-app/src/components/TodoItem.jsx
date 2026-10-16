@@ -5,6 +5,7 @@ import { useState } from 'react';
 //   onToggle — переключить done
 //   onDelete — удалить
 //   onEdit — сохранить новое название
+
 function TodoItem({ todo, onToggle, onDelete, onEdit }) {
   // Локальное состояние редактирования — НЕ нужно родителю
   const [isEditing, setIsEditing] = useState(false);
@@ -74,6 +75,16 @@ function TodoItem({ todo, onToggle, onDelete, onEdit }) {
           {todo.text}
         </span>
       )}
+
+      {todo.createdAt && (
+  <small style={{ color: '#9ca3af', fontSize: 12, whiteSpace: 'nowrap' }}>
+    {new Date(todo.createdAt).toLocaleString('ru-RU', {
+      day: '2-digit',
+      month: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+    })}
+  </small>)}
 
       {/* Кнопки: показать в режиме редактирования, иначе — удалить */}
       {isEditing ? (

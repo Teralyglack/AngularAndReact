@@ -6,9 +6,9 @@ import TodoList from './components/TodoList';
 function App() {
   // ---- Состояние ----
   const [todos, setTodos] = useState([
-    { id: 1, text: 'Изучить useState', done: true, priority: 'high' },
-    { id: 2, text: 'Разобраться со списками', done: false, priority: 'medium' },
-    { id: 3, text: 'Сделать todo', done: false, priority: 'low' },
+    { id: 1, text: 'Изучить useState', done: true, priority: 'high',createdAt: new Date().toISOString()  },
+    { id: 2, text: 'Разобраться со списками', done: false, priority: 'medium', createdAt: new Date().toISOString() },
+    { id: 3, text: 'Сделать todo', done: false, priority: 'low',createdAt: new Date().toISOString() },
   ]);
   const [filter, setFilter] = useState('all'); // 'all' | 'active' | 'done'
 
@@ -20,6 +20,7 @@ function App() {
       text,
       priority,
       done: false,
+      createdAt: new Date().toISOString(),
     };
     setTodos((prev) => [...prev, newTodo]);
   }
