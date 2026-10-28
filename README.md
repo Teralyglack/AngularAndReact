@@ -1,16 +1,6 @@
-# React + Vite
+Первый тест:
+<img width="1911" height="1016" alt="Снимок экрана 2026-10-28 105925" src="https://github.com/user-attachments/assets/5b7c57ed-774c-4b3f-94af-c5ccefc39400" />
+<img width="1917" height="1016" alt="Снимок экрана 2026-10-28 105831" src="https://github.com/user-attachments/assets/f231d07d-8fef-430d-bc5c-a6ef9deadbdc" />
+<img width="1917" height="1017" alt="Снимок экрана 2026-10-28 110124" src="https://github.com/user-attachments/assets/64688761-d357-4b9d-9d18-ad0aef7271d0" />
+<img width="1912" height="1017" alt="Снимок экрана 2026-10-28 110028" src="https://github.com/user-attachments/assets/d3a0d687-b129-4f38-826e-9f8c616d6c8d" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
