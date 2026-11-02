@@ -1,0 +1,88 @@
+/* ============================================================
+   ТЕМЫ. Все цвета сайта живут здесь, в переменных.
+   Чтобы сменить тему, JS меняет атрибут на <html>:
+   document.documentElement.setAttribute('data-theme', 'dark')
+
+   В остальных CSS-файлах цвета НЕ пишем напрямую,
+   только var(--имя).
+   ============================================================ */
+
+/* ---------- Светлая «Сирень» (по умолчанию) ---------- */
+:root,
+[data-theme="light"] {
+  --bg: #faf5ff;
+  --bg-gradient: linear-gradient(135deg, #faf5ff 0%, #fdf2f8 100%);
+  --surface: #ffffff;
+  --surface-2: #f3e8ff;
+  --text: #2e1065;
+  --text-muted: #7c6a99;
+  --border: #e9d5ff;
+  --accent: #a855f7;
+  --accent-2: #ec4899;
+  --accent-text: #ffffff;
+  --accent-gradient: linear-gradient(135deg, var(--accent), var(--accent-2));
+  --danger: #e11d48;
+  --success: #16a34a;
+  --shadow: 0 4px 20px rgba(168, 85, 247, 0.15);
+}
+
+/* ---------- Тёмная «Ночная орхидея» ---------- */
+[data-theme="dark"] {
+  --bg: #1a0b2e;
+  --bg-gradient: linear-gradient(135deg, #1a0b2e 0%, #2b0f3f 100%);
+  --surface: #2a1245;
+  --surface-2: #3b1b5e;
+  --text: #f5e8ff;
+  --text-muted: #b9a3d6;
+  --border: #4c2a78;
+  --accent: #c084fc;
+  --accent-2: #f472b6;
+  --accent-text: #1a0b2e;
+  --accent-gradient: linear-gradient(135deg, var(--accent), var(--accent-2));
+  --danger: #fb7185;
+  --success: #4ade80;
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+}
+
+/* ---------- Розовая «Пудра» ---------- */
+[data-theme="rose"] {
+  --bg: #fff1f5;
+  --bg-gradient: linear-gradient(135deg, #fff1f5 0%, #ffe4f1 100%);
+  --surface: #ffffff;
+  --surface-2: #ffe4ec;
+  --text: #4a0d2e;
+  --text-muted: #9d5b78;
+  --border: #fbcfe8;
+  --accent: #ec4899;
+  --accent-2: #a855f7;
+  --accent-text: #ffffff;
+  --accent-gradient: linear-gradient(135deg, var(--accent), var(--accent-2));
+  --danger: #be123c;
+  --success: #15803d;
+  --shadow: 0 4px 20px rgba(236, 72, 153, 0.18);
+}
+
+/* ---------- Глубокая «Виноград» ---------- */
+[data-theme="grape"] {
+  --bg: #241046;
+  --bg-gradient: linear-gradient(135deg, #241046 0%, #3a1250 100%);
+  --surface: #34195f;
+  --surface-2: #45227a;
+  --text: #fdf4ff;
+  --text-muted: #d8b4fe;
+  --border: #6b3fa0;
+  --accent: #e879f9;
+  --accent-2: #fb7185;
+  --accent-text: #241046;
+  --accent-gradient: linear-gradient(135deg, var(--accent), var(--accent-2));
+  --danger: #fda4af;
+  --success: #86efac;
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* ============================================================
+   БОНУС: «любой свой цвет».
+   JS может перебить акцент так:
+   document.documentElement.style.setProperty('--accent', '#ff00aa')
+   Градиент подхватит новый цвет сам.
+   ============================================================ */
